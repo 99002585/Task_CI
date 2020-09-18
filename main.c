@@ -19,7 +19,7 @@ void calculator_menu(void)
 {
     int calculator_operation;
     printf("\nAvailable Operations\n");
-    printf("\n1. Add\n2. Subtract\n3. Multiply\n4. Divide\n5. Factorial\n6. Angstrom\n10. Exit");
+    printf("\n1. Add\n2. Subtract\n3. Multiply\n4. Divide\n5. Factorial\n6. Angstrom\n7. Primeno check\n10. Exit");
     printf("\n\tEnter your choice\n");
    
      __fpurge(stdin);
@@ -100,12 +100,21 @@ void calculator_menu(void)
             break;
         case 6:
              scanf("%d",calculator_operand1);
-             int val=isangstrom(int operand1);
+             int val=isangstrom(int calculator_operand1);
              if(value=0)
                      printf("NOT ANGSTROM");
              else
                      printf("ANGSTROM");
              break;
+        case 7:
+             scanf("%d",calculator_operand1);
+             int val=isprime(int calculator_operand1);
+             if(value=1)
+                     printf("\nNOT PRIME");
+             else
+                     printf("\nPRIME");
+             break;      
+
     
     
     

@@ -1,4 +1,5 @@
 #include <calculator.h>
+#include <math.h>
 
 int add(int operand1, int operand2)
 {
@@ -39,3 +40,26 @@ int factorial(int operand1)
     return fact;
   }
 }
+
+int isangstrom(int operand1)
+{
+    int temp_operand,loop_var=0,remainder=0,result=0;
+    for (temp_operand = operand1; temp_operand != 0; ++loop_var)
+    {
+       temp_operand /= 10;
+    }
+
+   for (temp_operand = operand1; temp_operand != 0; temp_operand /= 10)
+   {
+       remainder = temp_operand % 10;
+
+      // store the sum of the power of individual digits in result
+      result += pow(remainder, loop_var);
+   }
+
+   // if num is equal to result, the number is an Armstrong number
+   if ((int)result == operand1)
+    return 1;
+   else
+    return 0;
+}    

@@ -19,7 +19,7 @@ void calculator_menu(void)
 {
     int calculator_operation;
     printf("\nAvailable Operations\n");
-    printf("\n1. Add\n2. Subtract\n3. Multiply\n4. Divide\n5. Factorial\n6. Angstrom\n7. Primeno check\n10. Exit");
+    printf("\n1. Add\n2. Subtract\n3. Multiply\n4. Divide\n5. Factorial\n6. Angstrom\n7. Primeno check\n8. Even\Odd check\n9. Oddnum check10. Exit");
     printf("\n\tEnter your choice\n");
    
      __fpurge(stdin);
@@ -114,7 +114,14 @@ void calculator_menu(void)
              else
                      printf("\nPRIME");
              break;      
-
+        case 8:
+             scanf("%d",calculator_operand1);
+             int val=even_odd(int calculator_operand1);
+             if(value=1)
+                     printf("\nEVEN");
+             else
+                     printf("\nODD");
+             break;      
     
     
     

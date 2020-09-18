@@ -63,3 +63,21 @@ int isangstrom(int operand1)
    else
     return 0;
 }    
+
+int isprime(int operand1)
+{
+    int flag=0;
+    if(operand1>1)
+    {
+        for (loop_var = 2; loop_var <= operand1 / 2; ++loop_var) {
+
+        // condition for non-prime
+        if (operand1 % loop_var == 0) 
+        {
+            flag = 1;
+            break;
+        }
+    }
+    return flag;
+}        
+ 

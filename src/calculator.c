@@ -81,3 +81,11 @@ int isprime(int operand1)
     return flag;
 }        
  
+int even_odd(int operand1)
+{
+    if(operand1%2==0)
+        return 1;
+    else 
+        return 0;
+}
+    

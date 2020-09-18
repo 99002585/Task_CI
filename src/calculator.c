@@ -88,4 +88,53 @@ int even_odd(int operand1)
     else 
         return 0;
 }
+ 
+   float circle_area( int radius)
+   {    
+       float val=0;
+       val=3.14*radius*radius;
+       return val;
+   }
     
+     float circle_pm( int radius)
+   {    
+       float val=0;
+       val=3.14*2*radius;
+       return val;
+   }
+       int square_area( int side)
+   {    
+       int val=0;
+       val=side*side;
+       return val;
+   }
+    
+      int square_pm( int side)
+   {    
+       int val=0;
+       val=4*side;
+       return val;
+   }
+   
+    int rect_area( int side1,int side2)
+    {
+        retrun side1*side2;
+    }
+    
+    int rect_pm( int side1,int side2)
+    {
+        retrun 2*(side1+side2);
+    }
+    
+    float tri_area( int side1,int side2,int side3)
+    {
+        float temp=(side1+side2+side3)/2;
+        float val=temp*(temp-side1)*(temp-side2)*(temp-side3);
+        return pow(val,0.5);
+    }
+    
+    int tri_pm( int side1,int side2,int side3)
+    {
+        return side1+side2+side3;
+    }
+

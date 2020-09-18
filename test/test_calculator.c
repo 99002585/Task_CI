@@ -34,10 +34,10 @@ int main() {
   
   
   /* Add your test functions in this format for testing*/
-  CU_add_test(suite, "add", test_add);
-  CU_add_test(suite, "subtract", test_subtract);
-  CU_add_test(suite, "multiply", test_multiply);
-  CU_add_test(suite, "divide", test_divide);
+  CU_add_test(suite,1, test_add);
+  CU_add_test(suite,2, test_subtract);
+  CU_add_test(suite,3, test_multiply);
+  CU_add_test(suite,4, test_divide);
   CU_add_test(suite,5,test_factorial );
     CU_add_test(suite,6,test_angstrom );
     CU_add_test(suite,7,test_prime );

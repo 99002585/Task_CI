@@ -155,7 +155,7 @@ void calculator_menu(void)
              break;
            case 15:
              scanf("%d %d %d", calculator_operand1, calculator_operand2, calculator_operand3);
-             int val=tri_area(calculator_operand1, calculator_operand2, calculator_operand3);
+             float val=tri_area(calculator_operand1, calculator_operand2, calculator_operand3);
              printf("Area=%d",val);
              break;
            case 16:

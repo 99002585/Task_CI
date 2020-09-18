@@ -3,6 +3,7 @@
 
 /* Display the menu of operations supported */
 void calculator_menu(void);
+int calculator_operand1, calculator_operand2, calculator_operand3;
 
 
 /* Start of the application */
@@ -26,26 +27,7 @@ void calculator_menu(void)
      __fpurge(stdin);
     scanf("%d", calculator_operation);
 
-    if(calculator_operation==17)
-    {
-        printf("\nThank you. Exiting the Application\n");
-        exit(0);
-    }
-
-    if(INVALID != valid_operation(calculator_operation))
-    {
-        printf("\n\tEnter your Numbers with space between them\n");
-        __fpurge(stdin);
-        scanf("%d %d", calculator_operand1, calculator_operand2);
-    }
-    else
-    {
-        printf("\n\t---Wrong choice---\nEnter to continue\n");
-        __fpurge(stdin);
-        getchar();
-        return;
-        
-    }
+   
     
   
   

@@ -69,7 +69,7 @@ int isprime(int operand1)
     int flag=0;
     if(operand1>1)
     {
-        for (loop_var = 2; loop_var <= operand1 / 2; ++loop_var) {
+        for (int loop_var = 2; loop_var <= operand1 / 2; ++loop_var) {
 
         // condition for non-prime
         if (operand1 % loop_var == 0) 
@@ -79,7 +79,8 @@ int isprime(int operand1)
         }
     }
     return flag;
-}        
+  }
+}       
  
 int even_odd(int operand1)
 {
@@ -118,12 +119,12 @@ int even_odd(int operand1)
    
     int rect_area( int side1,int side2)
     {
-        retrun side1*side2;
+        return side1 * side2;
     }
     
     int rect_pm( int side1,int side2)
     {
-        retrun 2*(side1+side2);
+        return 2 * (side1+side2);
     }
     
     float tri_area( int side1,int side2,int side3)

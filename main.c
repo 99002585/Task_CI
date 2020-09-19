@@ -26,7 +26,7 @@ void calculator_menu(void)
     printf("\n12. Square perimeter\n 13.Rectngle area\n 14.Rectangle perimeter\n15. Triangle area\n16. Triangle perimeter 17. Exit");
     printf("\n\tEnter your choice\n");
    
-     __fpurge(stdin);
+     
     scanf("%d", &calculator_operation);
 
    
@@ -37,43 +37,35 @@ void calculator_menu(void)
     {
         case 1:
             scanf("%d %d", &calculator_operand1, &calculator_operand2);
-            printf("\n\t%d + %d = %d\nEnter to continue", 
-            calculator_operand1, 
-            calculator_operand2,
-            add(calculator_operand1, calculator_operand2));
             
-            __fpurge(stdin);
-            getchar();
+           int val= add(calculator_operand1, calculator_operand2);
+            printf("%d",val);
+            
+            
             break;
         case 2:
             scanf("%d %d", &calculator_operand1, &calculator_operand2);
-            printf("\n\t%d - %d = %d\nEnter to continue", 
-            calculator_operand1, 
-            calculator_operand2,
-            subtract(calculator_operand1, calculator_operand2));
             
-            __fpurge(stdin);
-            getchar();
+            int val=subtract(calculator_operand1, calculator_operand2);
+            
+            
+            printf("%d",val);
             break;
         case 3:
             scanf("%d %d", &calculator_operand1, &calculator_operand2);
-            printf("\n\t%d * %d = %d\nEnter to continue", 
-            calculator_operand1, 
-            calculator_operand2,
-            multiply(calculator_operand1, calculator_operand2));
             
-            __fpurge(stdin);
-            getchar();
+            int val=multiply(calculator_operand1, calculator_operand2);
+            
+            printf("%d",val);
+           
             break;
         case 4:
             scanf("%d %d", &calculator_operand1, &calculator_operand2);
-            printf("\n\t%d / %d = %d\nEnter to continue", 
-            calculator_operand1, 
-            calculator_operand2,
-            divide(calculator_operand1, calculator_operand2));
             
-            __fpurge(stdin);
-            getchar();
+            int val=divide(calculator_operand1, calculator_operand2);
+            
+            
+            printf("%d",val);
             break;
         case 5:
             scanf("%d", &calculator_operand1);

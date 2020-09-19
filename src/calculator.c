@@ -1,5 +1,5 @@
 #include <calculator.h>
-#include <math.h>
+
 
 int add(int operand1, int operand2)
 {
@@ -54,7 +54,7 @@ int isangstrom(int operand1)
        remainder = temp_operand % 10;
 
       // store the sum of the power of individual digits in result
-      result += pow(remainder, loop_var);
+      result +=(remainder*remainder*remainder);
    }
 
    // if num is equal to result, the number is an Armstrong number

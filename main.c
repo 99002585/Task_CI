@@ -1,5 +1,6 @@
 #include <calculator.h>
 #include <stdio.h>
+#include<stdio_ext.h>
 
 
 /* Display the menu of operations supported */

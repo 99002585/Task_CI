@@ -73,7 +73,7 @@ void calculator_menu(void)
              val=factorial(calculator_operand1);
             if(val<0)
               printf("No factorial for negative no");
-            else if
+            else 
               printf("\nFactorial=%d",val);
             break;
         case 6:
@@ -103,12 +103,12 @@ void calculator_menu(void)
          case 9:
              scanf("%d",&calculator_operand1);
               val1=circle_area(calculator_operand1);
-             printf("Area=%d",val1);
+             printf("Area=%f",val1);
              break;
          case 10:
              scanf("%d",&calculator_operand1);
               val1=circle_pm(calculator_operand1);
-             printf("Perimeter=%d",val1);
+             printf("Perimeter=%f",val1);
              break;
           case 11:
              scanf("%d",&calculator_operand1);
@@ -133,7 +133,7 @@ void calculator_menu(void)
            case 15:
              scanf("%d %d %d", &calculator_operand1, &calculator_operand2, &calculator_operand3);
               val1=tri_area(calculator_operand1, calculator_operand2, calculator_operand3);
-             printf("Area=%d",val);
+             printf("Area=%f",val1);
              break;
            case 16:
              scanf("%d %d %d", &calculator_operand1, &calculator_operand2, &calculator_operand3);
@@ -142,9 +142,7 @@ void calculator_menu(void)
              break;
     
     
-        case 17:
-            exit(0);
-            break;
+        
         default:
             printf("\n\t---It should never come here---\n");
     }

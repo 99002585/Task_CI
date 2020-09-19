@@ -5,7 +5,8 @@
 
 /* Display the menu of operations supported */
 void calculator_menu(void);
-int calculator_operand1, calculator_operand2, calculator_operand3;
+int calculator_operand1=0, calculator_operand2=0, calculator_operand3=0,val=0;
+float val1=0;
 
 
 /* Start of the application */
@@ -38,7 +39,7 @@ void calculator_menu(void)
         case 1:
             scanf("%d %d", &calculator_operand1, &calculator_operand2);
             
-           int val= add(calculator_operand1, calculator_operand2);
+           val= add(calculator_operand1, calculator_operand2);
             printf("%d",val);
             
             
@@ -46,7 +47,7 @@ void calculator_menu(void)
         case 2:
             scanf("%d %d", &calculator_operand1, &calculator_operand2);
             
-            int val=subtract(calculator_operand1, calculator_operand2);
+             val=subtract(calculator_operand1, calculator_operand2);
             
             
             printf("%d",val);
@@ -54,7 +55,7 @@ void calculator_menu(void)
         case 3:
             scanf("%d %d", &calculator_operand1, &calculator_operand2);
             
-            int val=multiply(calculator_operand1, calculator_operand2);
+             val=multiply(calculator_operand1, calculator_operand2);
             
             printf("%d",val);
            
@@ -62,14 +63,14 @@ void calculator_menu(void)
         case 4:
             scanf("%d %d", &calculator_operand1, &calculator_operand2);
             
-            int val=divide(calculator_operand1, calculator_operand2);
+             val=divide(calculator_operand1, calculator_operand2);
             
             
             printf("%d",val);
             break;
         case 5:
             scanf("%d", &calculator_operand1);
-            int value=factorial(calculator_operand1);
+             value=factorial(calculator_operand1);
             if(value<0)
               printf("No factorial for negative no";
             else if
@@ -77,7 +78,7 @@ void calculator_menu(void)
             break;
         case 6:
              scanf("%d",&calculator_operand1);
-             int val=isangstrom(calculator_operand1);
+              val=isangstrom(calculator_operand1);
              if(value=0)
                      printf("NOT ANGSTROM");
              else
@@ -85,7 +86,7 @@ void calculator_menu(void)
              break;
         case 7:
              scanf("%d",&calculator_operand1);
-             int val=isprime(calculator_operand1);
+              val=isprime(calculator_operand1);
              if(value=1)
                      printf("\nNOT PRIME");
              else
@@ -93,7 +94,7 @@ void calculator_menu(void)
              break;      
         case 8:
              scanf("%d",&calculator_operand1);
-             int val=even_odd(calculator_operand1);
+              val=even_odd(calculator_operand1);
              if(value=1)
                      printf("\nEVEN");
              else
@@ -101,42 +102,42 @@ void calculator_menu(void)
              break;      
          case 9:
              scanf("%d",&calculator_operand1);
-             float val=circle_area(calculator_operand1);
+              val1=circle_area(calculator_operand1);
              printf("Area=%d",val);
              break;
          case 10:
              scanf("%d",&calculator_operand1);
-             float val=circle_pm(calculator_operand1);
+              val1=circle_pm(calculator_operand1);
              printf("Perimeter=%d",val);
              break;
           case 11:
              scanf("%d",&calculator_operand1);
-             int val=square_area(calculator_operand1);
+              val=square_area(calculator_operand1);
              printf("Area=%d",val);
              break;
           case 12:
              scanf("%d",&calculator_operand1);
-             int val=square_pm(calculator_operand1);
+              val=square_pm(calculator_operand1);
              printf("Perimeter=%d",val);
              break;
           case 13:
              scanf("%d %d", &calculator_operand1, &calculator_operand2);
-             int val=rect_area(calculator_operand1, calculator_operand2);
+              val=rect_area(calculator_operand1, calculator_operand2);
              printf("Area=%d",val);
              break;
            case 14:
              scanf("%d %d", &calculator_operand1, &calculator_operand2);
-             int val=rect_pm(calculator_operand1, calculator_operand2);
+              val=rect_pm(calculator_operand1, calculator_operand2);
              printf("Perimeter=%d",val);
              break;
            case 15:
              scanf("%d %d %d", &calculator_operand1, &calculator_operand2, &calculator_operand3);
-             float val=tri_area(calculator_operand1, calculator_operand2, calculator_operand3);
+              val1=tri_area(calculator_operand1, calculator_operand2, calculator_operand3);
              printf("Area=%d",val);
              break;
            case 16:
              scanf("%d %d %d", &calculator_operand1, &calculator_operand2, &calculator_operand3);
-             int val=tri_pm(calculator_operand1, calculator_operand2, calculator_operand3);
+              val=tri_pm(calculator_operand1, calculator_operand2, calculator_operand3);
              printf("Perimeter=%d",val);
              break;
     

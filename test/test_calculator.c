@@ -108,7 +108,7 @@ void test_evenodd(void){
 }
 
 void test_circlearea(void){
-  CU_ASSERT(314==circle_area(100));
+  CU_ASSERT(314==circle_area(10));
 }
 void test_circlepm(void){
   CU_ASSERT(628==circle_pm(100));

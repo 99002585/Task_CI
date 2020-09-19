@@ -34,22 +34,22 @@ int main() {
   
   
   /* Add your test functions in this format for testing*/
-  CU_add_test(suite,1, test_add);
-  CU_add_test(suite,2, test_subtract);
-  CU_add_test(suite,3, test_multiply);
-  CU_add_test(suite,4, test_divide);
-  CU_add_test(suite,5,test_factorial );
-    CU_add_test(suite,6,test_angstrom );
-    CU_add_test(suite,7,test_prime );
-    CU_add_test(suite,8,test_evenodd );
-    CU_add_test(suite,9,test_circlearea );
-    CU_add_test(suite,10,test_circlepm );
-    CU_add_test(suite,11,test_squarearea );
-    CU_add_test(suite,12,test_squarepm);
-    CU_add_test(suite,13,test_rectarea );
-    CU_add_test(suite,14,test_rectpm );
-    CU_add_test(suite,15,test_triarea );
-    CU_add_test(suite,16,test_tripm );
+  CU_add_test(suite,"add", test_add);
+  CU_add_test(suite,"subtract", test_subtract);
+  CU_add_test(suite,"multiply", test_multiply);
+  CU_add_test(suite,"divide", test_divide);
+  CU_add_test(suite,"factorial",test_factorial );
+    CU_add_test(suite,"isangstrom",test_angstrom );
+    CU_add_test(suite,"isprime",test_prime );
+    CU_add_test(suite,"even_odd",test_evenodd );
+    CU_add_test(suite,"circle_area",test_circlearea );
+    CU_add_test(suite,"circle_pm",test_circlepm );
+    CU_add_test(suite,"square_area",test_squarearea );
+    CU_add_test(suite,"square_pm",test_squarepm);
+    CU_add_test(suite,"rect_area",test_rectarea );
+    CU_add_test(suite,"rect_pm",test_rectpm );
+    CU_add_test(suite,"tri_area",test_triarea );
+    CU_add_test(suite,"tri_pm",test_tripm );
   
 /* Note: Do not edit START*/
   /* Setup Test Framework to output the result to Screen */

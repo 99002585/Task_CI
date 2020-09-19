@@ -70,16 +70,16 @@ void calculator_menu(void)
             break;
         case 5:
             scanf("%d", &calculator_operand1);
-             value=factorial(calculator_operand1);
-            if(value<0)
+             val=factorial(calculator_operand1);
+            if(val<0)
               printf("No factorial for negative no";
             else if
-              printf("\nFactorial=%d",value);
+              printf("\nFactorial=%d",val);
             break;
         case 6:
              scanf("%d",&calculator_operand1);
               val=isangstrom(calculator_operand1);
-             if(value=0)
+             if(val=0)
                      printf("NOT ANGSTROM");
              else
                      printf("ANGSTROM");
@@ -87,7 +87,7 @@ void calculator_menu(void)
         case 7:
              scanf("%d",&calculator_operand1);
               val=isprime(calculator_operand1);
-             if(value=1)
+             if(val=1)
                      printf("\nNOT PRIME");
              else
                      printf("\nPRIME");
@@ -95,7 +95,7 @@ void calculator_menu(void)
         case 8:
              scanf("%d",&calculator_operand1);
               val=even_odd(calculator_operand1);
-             if(value=1)
+             if(val=1)
                      printf("\nEVEN");
              else
                      printf("\nODD");
@@ -103,12 +103,12 @@ void calculator_menu(void)
          case 9:
              scanf("%d",&calculator_operand1);
               val1=circle_area(calculator_operand1);
-             printf("Area=%d",val);
+             printf("Area=%d",val1);
              break;
          case 10:
              scanf("%d",&calculator_operand1);
               val1=circle_pm(calculator_operand1);
-             printf("Perimeter=%d",val);
+             printf("Perimeter=%d",val1);
              break;
           case 11:
              scanf("%d",&calculator_operand1);

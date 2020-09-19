@@ -74,7 +74,7 @@ void calculator_menu(void)
             if(val<0)
               printf("No factorial for negative no");
             else 
-              printf("\nFactorial=%d",val);
+             printf(" Factorial=%d",val);
             break;
         case 6:
              scanf("%d",&calculator_operand1);
